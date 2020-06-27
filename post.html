@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
     <!-- Page Meta -->
-    <title>Author</title>
+    <title>Test post</title>
     <meta name="description" content="Portfolio website." />
 
     <!-- Mobile Meta -->
@@ -26,31 +26,31 @@
     <style>.hljs { background: none; }</style>
 
     <!-- Ghost outputs important style and meta data with this tag -->
-        <link rel="canonical" href="http://localhost:4000//author/casper/" />
+        <link rel="canonical" href="http://localhost:4000//post" />
     <meta name="referrer" content="origin" />
     <link rel="next" href="/page2/" />
 
     <meta property="og:site_name" content="Paul Couairon" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Author" />
+    <meta property="og:title" content="Test post" />
     <meta property="og:description" content="Portfolio website." />
-    <meta property="og:url" content="http://localhost:4000//author/casper/" />
-    <meta property="og:image" content="/assets/images/cover4.jpg" />
+    <meta property="og:url" content="http://localhost:4000//post" />
+    <meta property="og:image" content="/assets/images/cover3.jpg" />
 
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Author" />
+    <meta name="twitter:title" content="Test post" />
     <meta name="twitter:description" content="Portfolio website." />
-    <meta name="twitter:url" content="http://localhost:4000//author/casper/" />
-    <meta name="twitter:image:src" content="/assets/images/cover4.jpg" />
+    <meta name="twitter:url" content="http://localhost:4000//post" />
+    <meta name="twitter:image:src" content="/assets/images/cover3.jpg" />
 
     <script type="application/ld+json">
 {
     "@context": "http://schema.org",
     "@type": "Website",
     "publisher": "Paul Couairon",
-    "name": "Author",
-    "url": "http://localhost:4000//author/casper/",
-    "image": "/assets/images/cover4.jpg",
+    "name": "Test post",
+    "url": "http://localhost:4000//post",
+    "image": "/assets/images/cover3.jpg",
     "description": "Portfolio website."
 }
     </script>
@@ -60,7 +60,7 @@
 
 
 </head>
-<body class="author-template nav-closed">
+<body class="home-template nav-closed">
 
     <!-- The blog navigation links -->
     <div class="nav">
@@ -79,61 +79,36 @@
     <div class="site-wrapper">
 
         <!-- All the main content gets inserted here, index.hbs, post.hbs, etc -->
-        <!-- < default}} -->
-<!-- The tag above means - insert everything in this file into the [body] of the default.hbs template -->
+        <!-- default -->
 
-<!-- The big featured header -->
+<!-- The comment above "< default" means - insert everything in this file into -->
+    <!-- the [body] of the default.hbs template, which contains our header/footer. -->
 
-<!-- Everything inside the #author tags pulls data from the author -->
-<!-- #author  -->
-    <header class="main-header author-head " style="background-image: url(/assets/images/cover4.jpg) ">
-        <nav class="main-nav overlay clearfix">
-            <a class="blog-logo" href="/"><img src="/assets/images/ghost.png" alt="Blog Logo" /></a>
-            
-                <a class="menu-button icon-menu" href="#"><span class="word">Menu</span></a>
-            
-        </nav>
-    </header>
+<!-- Everything inside the #post tags pulls data from the post -->
+<!-- #post -->
 
-    <section class="author-profile inner">
+<header class="main-header post-head " style="background-image: url(/assets/images/cover3.jpg) ">
+    <nav class="main-nav  overlay  clearfix">
+        <a class="blog-logo" href="/"><img src="/assets/images/ghost.png" alt="Blog Logo" /></a>
         
-    </section>
-<!-- /author -->
-
-<!-- The main content area on the homepage -->
-<main id="content" class="content" role="main">
-
-    <!-- The tag below includes the post loop - partials/loop.hbs  -->
-        <!-- Previous/next page links - only displayed on page 2+ -->
-    <div class="extra-pagination inner">
+            <a class="menu-button icon-menu" href="#"><span class="word">Menu</span></a>
         
-            <nav class="pagination" role="pagination">
-    
-    <span class="page-number"> Page 1 of 1 </span>
-    
-</nav>
+    </nav>
+</header>
 
-        
-    </div>
+<main class="content" role="main">
 
-    <!-- This is the post loop - each post will be output using this markup -->
-    
-    <article class="post">
+    <article class="post tag-test tag-content">
+
         <header class="post-header">
-            <h2 class="post-title"><a href="/post">Test post</a></h2>
-        </header>
-        <section class="post-excerpt">
-            <p>Titre
-titre2
+            <h1 class="post-title">Test post</h1>
+            <section class="post-meta">
+            <!-- <a href='/'></a> -->
 
-super project
- <a class="read-more" href="/post">&raquo;</a></p>
-        </section>
-        <footer class="post-meta">
             
-
-            <!-- [[tags prefix=" on "]] -->
-            
+            <time class="post-date" datetime="2014-09-27">27 Sep 2014</time>
+                <!-- [[tags prefix=" on "]] -->
+                
                 on
                 
                     
@@ -144,51 +119,53 @@ super project
                        <a href='/tag/content'>Content</a>
                     
                 
-            
-            <time class="post-date" datetime="2014-09-27">27 Sep 2014</time>
-        </footer>
-    </article>
-    
-    <article class="post">
-        <header class="post-header">
-            <h2 class="post-title"><a href="/a-full-and-comprehensive-style-test">A Full and Comprehensive Style Test for Paul Couairon</a></h2>
+                
+            </section>
         </header>
-        <section class="post-excerpt">
-            <p>This is just an ipsis verbis copy of the first example running on the Ghost Demo. This shows how you can use html styling to achieve... <a class="read-more" href="/a-full-and-comprehensive-style-test">&raquo;</a></p>
+
+        <section class="post-content">
+
+            <h1 id="titre">Titre</h1>
+<h2 id="titre2">titre2</h2>
+
+<p>super project</p>
+
+
         </section>
-        <footer class="post-meta">
+
+        <footer class="post-footer">
+
+            <!-- Everything inside the #author tags pulls data from the author -->
+            <!-- #author-->
             
 
-            <!-- [[tags prefix=" on "]] -->
+            <!-- Add Disqus Comments -->
             
-                on
-                
-                    
-                       <a href='/tag/test'>Test</a>,
-                    
-                
-                    
-                       <a href='/tag/content'>Content</a>
-                    
-                
-            
-            <time class="post-date" datetime="2014-09-27">27 Sep 2014</time>
+
         </footer>
+
     </article>
-    
-
-    <!-- Previous/next page links - displayed on every page -->
-    
-        <nav class="pagination" role="pagination">
-    
-    <span class="page-number"> Page 1 of 1 </span>
-    
-</nav>
-
-    
-
 
 </main>
+
+<aside class="read-next">
+
+    <!-- [[! next_post ]] -->
+    
+    <!-- [[! /next_post ]] -->
+    <!-- [[! prev_post ]] -->
+    
+        <a class="read-next-story prev " style="background-image: url(/assets/images/cover3.jpg)" href="/a-full-and-comprehensive-style-test">
+            <section class="post">
+                <h2>A Full and Comprehensive Style Test for Paul Couairon</h2>
+                <p>This is just an ipsis verbis copy of the first example running on the Ghost...</p>
+            </section>
+        </a>
+    
+    <!-- [[! /prev_post ]] -->
+</aside>
+
+<!-- /post -->
 
 
         <!-- The tiny footer at the very bottom -->
